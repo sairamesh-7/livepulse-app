@@ -1,4 +1,4 @@
-# 🎬 StreamFest — Live Events & Streaming Platform
+# 🎬 livepulse-app — Live Events & Streaming Platform
 
 <div align="center">
 
@@ -76,7 +76,7 @@ User
 ## 📂 Project Structure
 
 ```
-streamfest/
+livepulse-app/
 ├── components/
 │   ├── Navbar.js              # Sticky header with logo + nav links
 │   ├── Navbar.module.css
@@ -202,7 +202,7 @@ vercel
 
 Or connect your GitHub repo directly at **vercel.com → Import Project → Deploy** (zero config needed for Next.js).
 
-**Live Demo:** [https://streamfest.vercel.app](https://livepulse-app.vercel.app/) *(update after deploy)*
+**Live Demo:** [https://livepulse-app.vercel.app/](https://livepulse-app.vercel.app/) *(update after deploy)*
 
 ---
 
@@ -214,7 +214,7 @@ Or connect your GitHub repo directly at **vercel.com → Import Project → Depl
 |------|------|
 | **Pragada Sai Ramesh** | Full-Stack Developer With AWS |
 
-🎓 *Your Institution Name*
+🎓 *SRM Institute of Science and Technology*
 
 </div>
 
