@@ -212,7 +212,7 @@ Or connect your GitHub repo directly at **vercel.com → Import Project → Depl
 
 | Name | Role |
 |------|------|
-| **Your Name** | Frontend Developer |
+| **Pragada Sai Ramesh** | Full-Stack Developer With AWS |
 
 🎓 *Your Institution Name*
 
