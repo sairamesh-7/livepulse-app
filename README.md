@@ -117,10 +117,10 @@ streamfest/
 
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/streamfest.git
+git clone https://github.com/sairamesh-7/livepulse-app.git
 
 # Navigate into the project
-cd streamfest
+cd livepulse-app
 
 # Install dependencies
 npm install
@@ -202,7 +202,7 @@ vercel
 
 Or connect your GitHub repo directly at **vercel.com → Import Project → Deploy** (zero config needed for Next.js).
 
-**Live Demo:** [https://streamfest.vercel.app](https://streamfest.vercel.app) *(update after deploy)*
+**Live Demo:** [https://streamfest.vercel.app](https://livepulse-app.vercel.app/) *(update after deploy)*
 
 ---
 
