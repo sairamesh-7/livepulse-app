@@ -52,7 +52,7 @@ export default function LiveChat() {
   )
   const [input, setInput] = useState('')
   const [viewerCount, setViewerCount] = useState(14200)
-  const bottomRef = useRef(null)
+  const messagesRef = useRef(null)
   const counterRef = useRef(msgs.length)
 
   useEffect(() => {
@@ -69,7 +69,8 @@ export default function LiveChat() {
   }, [])
 
   useEffect(() => {
-    bottomRef.current?.scrollIntoView({ behavior: 'smooth' })
+    if (!messagesRef.current) return
+    messagesRef.current.scrollTo({ top: messagesRef.current.scrollHeight, behavior: 'smooth' })
   }, [msgs])
 
   const send = () => {
@@ -86,7 +87,7 @@ export default function LiveChat() {
           <span className={styles.liveDot} />
           <span className={styles.title}>Live Chat</span>
         </div>
-        <span className={styles.viewers}>
+        <span className={styles.viewers}> 
           <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
             <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
             <circle cx="12" cy="12" r="3"/>
@@ -95,7 +96,7 @@ export default function LiveChat() {
         </span>
       </div>
 
-      <div className={styles.messages}>
+      <div className={styles.messages} ref={messagesRef}>
         {msgs.map(m => (
           <div key={m.id} className={`${styles.msg} ${m.isOwn ? styles.ownMsg : ''}`}>
             <span className={styles.user} style={{ color: m.color }}>{m.user}</span>
@@ -103,7 +104,6 @@ export default function LiveChat() {
             <span className={styles.time}>{m.time}</span>
           </div>
         ))}
-        <div ref={bottomRef} />
       </div>
 
       <div className={styles.inputArea}>
